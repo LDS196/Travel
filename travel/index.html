@@ -10,7 +10,7 @@
    <link rel="icon" href="./img/svg/logo.svg">
 </head>
 
-<body>
+<body class="body">
    <header class="header">
       <div class="wrapper">
          <div class="header-wrapper">
@@ -19,7 +19,7 @@
                      alt="logo"></a>
                <span class="header-logo-name">Travel Portal</span>
             </div>
-            <div class="header-nav">
+            <nav class="header-nav">
                <ul class="header-nav-list">
                   <li class="header-nav-items"><a href="#How" class="header-nav-list-link">How It Works</a>
                   </li>
@@ -29,12 +29,29 @@
                   </li>
                   <li class="header-nav-items"><a href="#Stories" class="header-nav-list-link">Travel Stories</a>
                   </li>
+                  <li class="header-nav-items header_nav_items_mobile"><a href="#Account"
+                        class="header-nav-list-link">Account</a>
+                  </li>
+                  <li class="header-nav-items header_nav_items_mobile"><a href="#Social"
+                        class="header-nav-list-link">Social media</a>
+                  </li>
                </ul>
-            </div>
+               <div class="header_nav-close">
+                  <span class="header_nav-close-line"></span>
+                  <span class="header_nav-close-line"></span>
+               </div>
+            </nav>
             <div class="header-buttom">
                <button type="submit" class="header-submit">Login</button>
             </div>
+            <div class="header_burger burger">
+               <span class="burger_line burger_line_first"></span>
+               <span class="burger_line burger_line_second"></span>
+               <span class="burger_line burger_line_third"></span>
+            </div>
+
          </div>
+
       </div>
    </header>
 
@@ -284,7 +301,7 @@
 
                      </div>
                   </div>
-                  <div class="footer">
+                  <div class="footer" id="Social">
                      <div class="wrapper wrapper-footer">
                         <div class="author">
                            <p class="authot-info">
