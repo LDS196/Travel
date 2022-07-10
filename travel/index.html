@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
@@ -10,7 +10,7 @@
    <link rel="icon" href="./img/svg/logo.svg">
 </head>
 
-<body>
+<body class="body">
    <header class="header">
       <div class="wrapper">
          <div class="header-wrapper">
@@ -19,7 +19,7 @@
                      alt="logo"></a>
                <span class="header-logo-name">Travel Portal</span>
             </div>
-            <div class="header-nav">
+            <nav class="header-nav">
                <ul class="header-nav-list">
                   <li class="header-nav-items"><a href="#How" class="header-nav-list-link">How It Works</a>
                   </li>
@@ -29,12 +29,29 @@
                   </li>
                   <li class="header-nav-items"><a href="#Stories" class="header-nav-list-link">Travel Stories</a>
                   </li>
+                  <li class="header-nav-items header_nav_items_mobile"><a href="#Account"
+                        class="header-nav-list-link">Account</a>
+                  </li>
+                  <li class="header-nav-items header_nav_items_mobile"><a href="#Social"
+                        class="header-nav-list-link">Social media</a>
+                  </li>
                </ul>
-            </div>
+               <div class="header_nav-close">
+                  <span class="header_nav-close-line"></span>
+                  <span class="header_nav-close-line"></span>
+               </div>
+            </nav>
             <div class="header-buttom">
                <button type="submit" class="header-submit">Login</button>
             </div>
+            <div class="header_burger burger">
+               <span class="burger_line burger_line_first"></span>
+               <span class="burger_line burger_line_second"></span>
+               <span class="burger_line burger_line_third"></span>
+            </div>
+
          </div>
+
       </div>
    </header>
 
@@ -66,39 +83,42 @@
             <div class="wrapper-steps">
                <h2 class="steps-title">3 STEPS TO THE PERFECT TRIP</h2>
                <div class="steps-list">
-                  <div class="steps-item one">
+                  <div class="steps-item steps_item-one">
                      <p class="steps-item-thumb">
                         <a href="#" class="steps-icon-link">
-                           <img src="./img/svg/icon-steps1.svg" alt="icon-steps1" class="steps-item-thumb-icon">
+                           <img src="./img/svg/icon-steps1.svg" alt="icon-steps1"
+                              class="steps-item-thumb-icon steps_item-thumb-icon-one">
                         </a>
                      </p>
-                     <p class="steps-item-info">
+                     <p class="steps-item-info steps-item-info-one">
                         <a href="#" class="steps-item-info-link">
                            Tell us what you want to do
                         </a>
                      </p>
                   </div>
 
-                  <div class="steps-item two">
+                  <div class="steps-item steps_item-two">
                      <p class="steps-item-thumb">
                         <a href="#" class="steps-icon-link">
-                           <img src="./img/svg/icon-steps2.svg" alt="icon-steps1" class="steps-item-thumb-icon">
+                           <img src="./img/svg/icon-steps2.svg" alt="icon-steps1"
+                              class="steps-item-thumb-icon steps_item-thumb-icon-two">
                         </a>
                      </p>
-                     <p class="steps-item-info">
-                        <a href="#" class="steps-item-info-link">
+                     <p class="steps-item-info steps-item-info-two">
+                        <a href="#" class="steps-item-info-link ">
                            Share us preferable dates
                         </a>
                      </p>
                   </div>
 
-                  <div class="steps-item three">
+                  <div class="steps-item steps_item-three">
                      <p class="steps-item-thumb">
                         <a href="#" class="steps-icon-link">
-                           <img src="./img/svg/icon-steps3.svg" alt="icon-steps3" class="steps-item-thumb-icon">
+                           <img src="./img/svg/icon-steps3.svg" alt="icon-steps3"
+                              class="steps-item-thumb-icon steps_item-thumb-icon-tree">
                         </a>
                      </p>
-                     <p class="steps-item-info">
+                     <p class="steps-item-info steps-item-info-tree">
                         <a href="#" class="steps-item-info-link">
                            We will give you recommendations
                         </a>
@@ -118,6 +138,16 @@
                <h2 class="destination-title" id="Destinations">
                   POPULAR DESTINATIONS
                </h2>
+               <div class="destinations_slider">
+                  <img src="./img/spain-mobile.jpg" alt="Spain" class="destinations_slider-pic">
+                  <span class="distination_card-vector-pale">
+                     <img src="./img/svg/vector-pale.svg" alt="vector" class="distination_card-vector-icon">
+                  </span>
+                  <span class="distination_card-vector-active">
+                     <img src="./img/svg/vector-active.svg" alt="vector" class="distination_card-vector-icon">
+                  </span>
+                  <span class="destination-pic-info-mobile">SPAIN</span>
+               </div>
                <div class="distination-cards">
                   <div class="distination-card">
                      <img src="./img/spain.jpg" alt="spain" class="destination-pic">
@@ -133,9 +163,9 @@
                   </div>
                </div>
                <div class="destination-slider-cercle">
-                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle">
-                  <img src="./img/svg/cercle-2.svg" alt="slider-cercle" class="destination-slider-cercle">
-                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle">
+                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle-pic">
+                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle-pic">
+                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle-pic">
                </div>
 
                <div class="destination-button-wrap">
@@ -166,23 +196,25 @@
                                  10 Photos of Attractive Thailand
                               </h3>
                               <p class="stories-disc-info">
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                 incididunt
-                                 ut
-                                 labore
-                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                 laboris
-                                 nisi
-                                 ut
-                                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                 velit
-                                 esse
-                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                 sunt
-                                 in
-                                 culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                 consectetur
-                                 adipiscing elit... <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
+                                 <span class="stories-disc-info-desktop">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt utlaboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptatevelit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident,
+                                    suntinculpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit...</span>
+                                 <span class="stories-disc-info-mobile">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla.Lorem ipsum dolor sit a...
+                                 </span>
+                                 <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
                               </p>
                            </div>
                         </div>
@@ -195,23 +227,25 @@
                                  Canyonlands National Park, Utah
                               </h3>
                               <p class="stories-disc-info">
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                 incididunt
-                                 ut
-                                 labore
-                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                 laboris
-                                 nisi
-                                 ut
-                                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                 velit
-                                 esse
-                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                 sunt
-                                 in
-                                 culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                 consectetur
-                                 adipiscing elit... <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
+                                 <span class="stories-disc-info-desktop">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt utlaboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptatevelit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident,
+                                    suntinculpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit...</span>
+                                 <span class="stories-disc-info-mobile">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla.Lorem ipsum dolor sit a...
+                                 </span>
+                                 <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
                               </p>
                            </div>
                         </div>
@@ -224,23 +258,25 @@
                                  I left my heart in the Mountains!
                               </h3>
                               <p class="stories-disc-info">
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                 incididunt
-                                 ut
-                                 labore
-                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                 laboris
-                                 nisi
-                                 ut
-                                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                 velit
-                                 esse
-                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                 sunt
-                                 in
-                                 culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                 consectetur
-                                 adipiscing elit... <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
+                                 <span class="stories-disc-info-desktop">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt utlaboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptatevelit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident,
+                                    suntinculpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit...</span>
+                                 <span class="stories-disc-info-mobile">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla.Lorem ipsum dolor sit a...
+                                 </span>
+                                 <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
                               </p>
                            </div>
                         </div>
@@ -253,23 +289,25 @@
                                  The Longest journey in my life!
                               </h3>
                               <p class="stories-disc-info">
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                 incididunt
-                                 ut
-                                 labore
-                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                 laboris
-                                 nisi
-                                 ut
-                                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                 velit
-                                 esse
-                                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                 sunt
-                                 in
-                                 culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                 consectetur
-                                 adipiscing elit... <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
+                                 <span class="stories-disc-info-desktop">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt utlaboreet dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptatevelit
+                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident,
+                                    suntinculpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit...</span>
+                                 <span class="stories-disc-info-mobile">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla.Lorem ipsum dolor sit a...
+                                 </span>
+                                 <a href="#" class="stories-disc-info-more"><b>Read More</b></a>
                               </p>
                            </div>
                         </div>
@@ -284,7 +322,7 @@
 
                      </div>
                   </div>
-                  <div class="footer">
+                  <div class="footer" id="Social">
                      <div class="wrapper wrapper-footer">
                         <div class="author">
                            <p class="authot-info">
