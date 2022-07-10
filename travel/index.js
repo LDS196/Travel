@@ -13,3 +13,5 @@
       menu.classList.remove('header-nav-active');
    })
 }());
+
+console.log("1.48\n2.15\n3.22\nTotal:85");
