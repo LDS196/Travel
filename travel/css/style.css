@@ -372,7 +372,7 @@ color: #F2785C;
 margin-bottom: 46px;
 text-align: center;
 }
-.destinations_slider {
+.destinations_mover {
    display: none;
 }
 .distination-cards {
@@ -382,13 +382,19 @@ text-align: center;
    justify-content: center;
    overflow: hidden;
    margin-bottom: 24px;
+   
+   
+   
 }
 .destination-pic{
+   position: relative;
    width: 800px;
    height: 800px;
 }
 .distination-card {
-   position: relative;
+ position: relative;
+   transition: all ease 1s;
+  
 }
 
 .destination-pic-info{
@@ -410,11 +416,11 @@ text-align: center;
    display: none;
 }
 
-.destination-slider-cercle{
+.destination-mover-cercle{
    margin-bottom: 19px;
    text-align: center;
 }
-.destination-slider-cercle-pic:nth-child(2){
+.destination-mover-cercle-pic:nth-child(2){
    background:url(../img/svg/cercle-2.svg) center;
    margin-right: 10px;
    margin-left: 10px;
@@ -948,13 +954,13 @@ input::placeholder{
 }
 
 
-.destinations_slider{
+.destinations_mover{
    display: block;
    padding: 0 15px;
    position: relative;
    margin-bottom: 10px;
 }
-.destinations_slider-pic{
+.destinations_mover-pic{
    width: 100%;
    max-width: 360px;
    height: auto;
@@ -974,7 +980,7 @@ input::placeholder{
    
    color: #FFFFFF;
 }
-.destination-slider-cercle{
+.destination-mover-cercle{
    position: absolute;
    margin-bottom: 0;
    text-align: center;
@@ -984,15 +990,15 @@ input::placeholder{
    
 }
 
-.destination-slider-cercle-pic{
+.destination-mover-cercle-pic{
    width: 8px;
    height: 8px;
 }
-.destination-slider-cercle-pic:nth-child(1){
+.destination-mover-cercle-pic:nth-child(1){
    background: url(../img/svg/cercle-2.svg) center;
    background-size:8px 8px;
 }
-.destination-slider-cercle-pic:nth-child(2){
+.destination-mover-cercle-pic:nth-child(2){
    background:none;
    margin-right: 3px;
    margin-left: 3px;
