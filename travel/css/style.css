@@ -379,8 +379,9 @@ text-align: center;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-column-gap: 60px;
-   justify-content: center;
-   overflow: hidden;
+ overflow: hidden;
+   justify-content:center;
+   overflow: idden;
    margin-bottom: 24px;
    
    
@@ -393,7 +394,7 @@ text-align: center;
 }
 .distination-card {
  position: relative;
-   transition: all ease 1s;
+   transition: all ease 3s;
   
 }
 
@@ -421,11 +422,12 @@ text-align: center;
    text-align: center;
 }
 .destination-mover-cercle-pic:nth-child(2){
-   background:url(../img/svg/cercle-2.svg) center;
    margin-right: 10px;
    margin-left: 10px;
 }
-
+.destination-mover-cercle-active{
+   background:url(../img/svg/cercle-2.svg) center;
+}
 
 .destination-button-wrap {
    text-align: center;
