@@ -372,31 +372,27 @@ color: #F2785C;
 margin-bottom: 46px;
 text-align: center;
 }
-.destinations_mover {
+.destinations_slider {
    display: none;
 }
 .distination-cards {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-column-gap: 60px;
- overflow: hidden;
+   overflow: hidden;
    justify-content:center;
    overflow: idden;
    margin-bottom: 24px;
-   
-   
-   
+   position: relative;
+}
+.distination-card{
+   position: relative;
 }
 .destination-pic{
-   position: relative;
-   width: 800px;
    height: 800px;
+   width: 800px;
 }
-.distination-card {
- position: relative;
-   transition: all ease 3s;
-  
-}
+
 
 .destination-pic-info{
    position: absolute;
@@ -956,18 +952,33 @@ input::placeholder{
 }
 
 
-.destinations_mover{
+.destinations_slider{
    display: block;
-   padding: 0 15px;
+   margin: 0 15px;
    position: relative;
    margin-bottom: 10px;
+   overflow: hidden;
 }
-.destinations_mover-pic{
+.destinations_slider-mobile {
+   width: 1440px;
+   height: 210px;
+   display: flex;
+   left: 0;
+   position: relative;
+   transition: 1s;
+
+}
+.destinations_slider-mobile-line{
+  
+   position: relative;
+   
+   
+}
+.destinations_slider-pic{
    width: 100%;
    max-width: 360px;
-   height: auto;
    border-radius: 16px;
-   object-fit: cover;
+   
 }
 
 .destination-pic-info-mobile{
@@ -996,16 +1007,18 @@ input::placeholder{
    width: 8px;
    height: 8px;
 }
-.destination-mover-cercle-pic:nth-child(1){
+.destination-mover-cercle-active{
+   background:none;
+}
+.destination-mover-cercle-active-mobile{
    background: url(../img/svg/cercle-2.svg) center;
    background-size:8px 8px;
 }
-.destination-mover-cercle-pic:nth-child(2){
-   background:none;
+.destination-mover-cercle-pic:nth-child(2) {
    margin-right: 3px;
    margin-left: 3px;
-   
 }
+
 .destination-button-wrap {
    text-align: center;
    padding-bottom: 20px;
@@ -1040,6 +1053,7 @@ input::placeholder{
    top: 50%;
    transform: translateY(-50%);
 }
+
 .distination_card-vector-active{
    display: inline;
    position: absolute;
@@ -1047,8 +1061,12 @@ input::placeholder{
    top: 50%;
    transform: translateY(-50%);
 }
-
-
+.vector-active-left{
+   background: url(../img/svg/vector-active-left.png)
+}
+.vector-active-right{
+   background: url(../img/svg/vector-active.svg);
+}
 .stories-title {
    font-size: 14px;
    line-height: 19px;

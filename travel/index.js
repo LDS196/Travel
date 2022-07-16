@@ -90,6 +90,72 @@ changeLeft();
 
 document.querySelector('.distination-card-slider-right').addEventListener('click', function () {
    changeRight();
+
    });
 
    //End slider desctop
+
+   let offset = 0;
+   const sliderMobile = document.querySelector('.destinations_slider-mobile')
+   let cercleLeft = document.querySelector('.distination_card-vector-pale')
+   let cercleRigth = document.querySelector('.distination_card-vector-active')
+
+   document.querySelector('.distination_card-vector-active').addEventListener('click',  function sliderPic (){
+      cercleRigth.classList.add('vector-active-right');
+      cercleLeft.classList.remove('vector-active-left');
+      offset = offset + 360;
+      if (offset === 360){
+         cer1()
+      }
+      if (offset === 720){
+         cer2()
+         cercleRigth.classList.remove('vector-active-right');
+         cercleLeft.classList.add('vector-active-left');
+      }
+      if (offset > 720){
+         cer0()
+         offset = 0;
+      }
+      sliderMobile.style.left = -offset +'px';
+   });
+   document.querySelector('.distination_card-vector-pale').addEventListener('click',  function sliderPic (){
+      cercleLeft.classList.add('vector-active-left');
+      cercleRigth.classList.remove('vector-active-right');
+      offset = offset - 360;
+      if (offset === 360){
+         cer1()
+         cercleRigth.classList.add('vector-active-right');
+         cercleLeft.classList.add('vector-active-left');
+      }
+      if (offset === 0){
+         cer0()
+         cercleRigth.classList.add('vector-active-right');
+         cercleLeft.classList.remove('vector-active-left');
+      
+      }
+      if (offset < 0){
+         cer2()
+         offset = 720;
+        
+      }
+      sliderMobile.style.left = -offset +'px';
+      
+   });
+ 
+         function cer0(){
+            cerclePic[0].classList.add('destination-mover-cercle-active-mobile');
+            cerclePic[2].classList.remove('destination-mover-cercle-active-mobile');
+         }
+
+         function cer1(){
+            cerclePic[1].classList.add('destination-mover-cercle-active-mobile');
+            cerclePic[0].classList.remove('destination-mover-cercle-active-mobile');
+         }
+         
+         function cer2(){
+            cerclePic[2].classList.add('destination-mover-cercle-active-mobile');
+            cerclePic[1].classList.remove('destination-mover-cercle-active-mobile');
+         }
+   
+
+  
