@@ -69,6 +69,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         url('../fonts/aleo-v11-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
  }
  /* red-hat-text-500 - latin */
+ /* red-hat-text-regular - latin */
+@font-face {
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../fonts/red-hat-text-v12-latin-regular.eot'); /* IE9 Compat Modes */
+   src: local(''),
+        url('../fonts/red-hat-text-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/red-hat-text-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/red-hat-text-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/red-hat-text-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/red-hat-text-v12-latin-regular.svg#RedHatText') format('svg'); /* Legacy iOS */
+ }
 @font-face {
    font-family: 'Red Hat Text';
    font-style: normal;
@@ -224,8 +237,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* End style header*/
 
 /* Start style main*/
-
-
 .preview-block {
    background:url(../img/back-preview.jpg) no-repeat center;
    background-size:cover;
@@ -414,7 +425,7 @@ text-align: center;
 }
 
 .destination-mover-cercle{
-   margin-bottom: 19px;
+   margin-bottom: 40px;
    text-align: center;
 }
 .destination-mover-cercle-pic:nth-child(2){
@@ -587,6 +598,252 @@ text-align: center;
    margin-right: 21.4px;
 
 }
+/*start css popap*/
+
+.popap {
+   position:;
+   height: 100%;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   top: 0 ;
+   z-index: 150;
+   left: 0;
+   opacity: ;
+   overflow: ;
+  
+}
+.popap_body {
+   min-height: 100%;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   padding: 0  10px;
+}
+.popap_content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 16px;
+   max-width: 650px;
+   max-height: 660px;
+   padding: 25px 45px 0px 45px;
+}
+.popap_title{
+   margin-bottom: 30px;
+}
+.popap_title-text {
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 38px;
+   color: #0D606F;
+  
+
+}
+.popap_facebook_btn{
+   margin-bottom: 24px;
+}
+button.popap_facebook_button span{
+   padding-left: 43px;
+
+}
+.popap_facebook_button {
+   background: #1877F2 url(../img/svg/Facebook-Logo.svg) no-repeat  164px 15px;
+   color: #FFFFFF;
+}
+.button {
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+   width:560px ;
+   height: 54px;
+   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+   border-radius: 10px;
+}
+.popap_google_btn{
+   margin-bottom: 13px;
+
+}
+
+.popap_google_button {
+   background: white url(../img/svg/Google-Logo.svg) no-repeat  174px 15px;
+   color: #0D606F;
+   
+}
+button.popap_google_button span{
+padding-left: 36px;
+}
+.popap_or{
+   position: relative;
+   border: none;
+   box-shadow:none;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   margin-bottom: 23px;
+   
+}
+.span-or{
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   color: rgba(13, 96, 111, 0.5);
+
+}
+
+.line-rigth{
+   left: 0;
+   display: block;
+   position: absolute;
+}
+.line{
+width: 261px;
+height: 1px;
+background: rgba(13, 96, 111, 0.5);
+
+}
+.line-left{
+   display: block;
+   position: absolute;
+   right: 0;
+}
+.popap_email{
+   margin-bottom: 42px;
+   position: relative;
+  
+
+}
+.span-text{
+   display: block;
+   position: absolute;
+   top: -24px;
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+
+   color: #0D606F;
+}
+.popap_password {
+   margin-bottom: 24px;
+   position: relative;
+ 
+}
+.popap_sing_btn{
+   margin-bottom: 10px;
+  
+}
+.popap_sing_button {
+   background: #0D606F;
+   color: white;
+   
+}
+.popap_forgot{
+   margin-bottom: 26px;
+  
+}
+.popap_footer-text{
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 18px;
+   color: rgba(13, 96, 111, 0.5);
+   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+
+}
+.popap_footer-text-fat{
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 18px;
+   text-decoration-line: underline;
+   color: #0D606F;
+   text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+.popap_line-wide{
+   margin-bottom: 20px;
+   width: 560px;
+   height: 1px;
+   background: rgba(13, 96, 111, 0.5);
+
+}
+
+/*end css popap*/
+
+/*start css popapsing*/
+.popapsing{
+   position: ;
+   height: 100%;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   top: 0 ;
+   z-index: 150;
+   left: 0;
+   opacity: ;
+   overflow: ;
+}
+.popapsing_body {
+   min-height: 100%;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   padding: 0 px;
+}
+.popapsing_content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 16px;
+   max-width: 650px;
+   max-height: 436px;
+   padding: 25px 45px 23px 45px;
+}
+.popapsing_title {
+   margin-bottom: 54px;
+}
+.popap_title-text {
+}
+.popapsing_email{
+   margin-bottom: 45px ;
+   position: relative;
+}
+.popapsing_password{
+   margin-bottom: 24px;
+   position: relative;
+}
+.popapsing_sing_btn{
+margin-bottom: 26px;
+}
+.popapsing_sing_button{
+   background: #0D606F;
+   color: white;
+
+}
+.popapsing_line-wide-span{
+   display: block;
+   margin-bottom: 20px;
+   width: 560px;
+   height: 1px;
+   background: rgba(13, 96, 111, 0.5);
+}
+
+
+
+/*end css popapsing*/
+
+
 
 /* style end footer*/
 
