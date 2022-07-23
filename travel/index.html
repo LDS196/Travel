@@ -15,7 +15,7 @@
       <div class="wrapper">
          <div class="header-wrapper">
             <div class="header-logo">
-               <a href="!#" class="header-logo-link"><img class="header-logo-pic" src="./img/svg/logo.svg"
+               <a href="#" class="header-logo-link"><img class="header-logo-pic" src="./img/svg/logo.svg"
                      alt="logo"></a>
                <span class="header-logo-name">Travel Portal</span>
             </div>
@@ -139,17 +139,37 @@
                   POPULAR DESTINATIONS
                </h2>
                <div class="destinations_slider">
-                  <img src="./img/spain-mobile.jpg" alt="Spain" class="destinations_slider-pic">
+                  <div class="destinations_slider-mobile">
+                     <div class="destinations_slider-mobile-line">
+                        <img src="./img/spain-mobile.jpg" alt="Spain" class="destinations_slider-pic">
+                        <span class="destination-pic-info-mobile">SPAIN</span>
+                     </div>
+                     <div class="destinations_slider-mobile-line">
+                        <img src="./img/japan-mobile.jpg" alt="Spain" class="destinations_slider-pic">
+                        <span class="destination-pic-info-mobile">JAPAN</span>
+                     </div>
+                     <div class="destinations_slider-mobile-line">
+                        <img src="./img/usa-mobile.jpg" alt="Spain" class="destinations_slider-pic">
+                        <span class="destination-pic-info-mobile">USA</span>
+                     </div>
+                  </div>
+
                   <span class="distination_card-vector-pale">
                      <img src="./img/svg/vector-pale.svg" alt="vector" class="distination_card-vector-icon">
                   </span>
-                  <span class="distination_card-vector-active">
-                     <img src="./img/svg/vector-active.svg" alt="vector" class="distination_card-vector-icon">
+                  <span class="distination_card-vector-active vector-active-right">
+                     <img src="./img/svg/vector-pale-right.png" alt="vector" class="distination_card-vector-icon ">
                   </span>
-                  <span class="destination-pic-info-mobile">SPAIN</span>
+
+                  
                </div>
+
                <div class="distination-cards">
-                  <div class="distination-card">
+                 
+                  <div class="distination-card distination-card-slider-left">
+                     <div class="distination-card">
+
+                     </div>
                      <img src="./img/spain.jpg" alt="spain" class="destination-pic">
                      <span class="destination-pic-info">SPAIN</span>
                   </div>
@@ -157,15 +177,15 @@
                      <img src="./img/japan.jpg" alt="japan" class="destination-pic">
                      <span class="destination-pic-info">JAPAN</span>
                   </div>
-                  <div class="distination-card">
+                  <div class="distination-card distination-card-slider-right">
                      <img src="./img/usa.jpg" alt="usa" class="destination-pic">
                      <span class="destination-pic-info">USA</span>
                   </div>
                </div>
-               <div class="destination-slider-cercle">
-                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle-pic">
-                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle-pic">
-                  <img src="./img/svg/cercle-1.svg" alt="slider-cercle" class="destination-slider-cercle-pic">
+               <div class="destination-mover-cercle">
+                  <img src="./img/svg/cercle-1.svg" alt="mover-cercle" class="destination-mover-cercle-pic destination-mover-cercle-active-mobile">
+                  <img src="./img/svg/cercle-1.svg" alt="mover-cercle" class="destination-mover-cercle-pic destination-mover-cercle-active">
+                  <img src="./img/svg/cercle-1.svg" alt="mover-cercle" class="destination-mover-cercle-pic">
                </div>
 
                <div class="destination-button-wrap">
@@ -343,7 +363,7 @@
                               </li>
                               <li class="social-media-item">
                                  <a href="https://rs.school/js-stage0/" class="social-media-link">
-                                    <img src="./img/svg/facebook-icon.svg" alt="Facebook">
+                                    <img src="./img/svg/twitter-logo.svg" alt="Twitter">
                                  </a>
                               </li>
                            </ul>
@@ -354,8 +374,146 @@
             </div>
          </div>
       </section>
+      <div class="popap">
+         <a href="#" class="popap_area"></a>
+            <div class="popap_body">
+               <div class="popap_content">
+                  <div class="popapclose">
+                     <div class="popap_title popap_title-text">
+                        <span>Log in to your account</span>
+                     </div>
+                     <div class="popap_facebook_btn">
+                        <a href="">
+                           <button class="popap_facebook_button button">
+                              <span>Sign In with Facebook</span>
+                           </button>
+                        </a>
+                     </div>
+                     <div class="popap_google_btn">
+                        <a href="">
+                        <button class="popap_google_button button">
+                           <span>Sign In with Google</span>
+                        </button>
+                        </a>
+                     </div>
+                     <div class="popap_or button ">
+                        <span class="span-or">or</span>
+                        <span class="line-rigth line"></span>
+                        <span class="line-left line"></span>
+                     </div>
 
+                     <div class="popap_email">
+                        <input class="popap_email_input button" value="" id="email">
+                        </input>
+                        <span class="popap_email-span span-text">E-mail</span>
+                  
+                     </div>
+                     <div class="popap_password">
+                        <input class="popap_password_input button" value="" id="password">
+                        </input>
+                        <span class="popap_password-span span-text">Password</span>
+                     </div>
+                  
+                     <div class="popap_sing_btn">
+                        <button class="popap_sing_button button">
+                           Sign In
+                        </button>
+                  
+                     </div>
+                     <div class="popap_forgot">
+                        <span class="popap_footer-text"></span>
+                        <span class="popap_footer-text-fat">Forgot Your Password?</span>
+                     </div>
+                     <div class="popap_line-wide">
+                     
+                     </div>
+                     <div class="popap_register">
+                        <span class="popap_footer-text">Don’t have an account?</span>
+                        <button class="popap_footer-text-fat closepopap">Register</button>
+                     </div>
+                     
+                  </div>
+
+
+                  <div class="popapsing-open">
+                     <div class="popapsing_title popap_title-text">
+                        <span>Create account</span>
+                     </div>
+                     <div class="popapsing_email">
+                        <input class="popapsing_email_input button">
+                        </input>
+                        <span class="popapsing_email-span span-text">E-mail</span>
+                  
+                  </div>
+                  <div class="popapsing_password">
+                     <input class="popapsing_password_input button">
+                     </input>
+                     <span class="popapsing_password-span span-text">Password</span>
+                  </div>
+               
+                  <div class="popapsing_sing_btn">
+                        <button class="popapsing_sing_button button">
+                           Sign Up
+                        </button>
+                  </div>
+                  <div class="popapsing_line-wide">
+                     <span class="popapsing_line-wide-span"></span>
+                  </div>
+                  <div class="popapsing_register">
+                     <span class="popap_footer-text">Already have an account? </span>
+                     <button class="popap_footer-text-fat">Log in</button>
+                  </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      
+      
+      
+      
+      
+      <!--
+      <div class="popapsing">
+         <div class="popapsing_body">
+            <div class="popapsing_content">
+               <div class="popapsing_title popap_title-text">
+                  <span>Create account</span>
+               </div>
+               <div class="popapsing_email">
+                  <input class="popapsing_email_input button">
+                  </input>
+                  <span class="popapsing_email-span span-text">E-mail</span>
+            
+            </div>
+            <div class="popapsing_password">
+               <input class="popapsing_password_input button">
+               </input>
+               <span class="popapsing_password-span span-text">Password</span>
+            </div>
+          
+            <div class="popapsing_sing_btn">
+                  <button class="popapsing_sing_button button">
+                     Sign Up
+                  </button>
+            </div>
+            <div class="popapsing_line-wide">
+               <span class="popapsing_line-wide-span"></span>
+
+            </div>
+            <div class="popapsing_register">
+               <span class="popap_footer-text">Already have an account? </span>
+               <button class="popap_footer-text-fat">Log in</button>
+            </div>
+            </div>
+         </div>
+      </div>
+      
+   -->
    </main>
+  
+
+
+
    <script src="./index.js"></script>
 </body>
 
