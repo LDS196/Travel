@@ -158,4 +158,44 @@ document.querySelector('.distination-card-slider-right').addEventListener('click
          }
    
 
-  
+ 
+
+document.querySelector('.popap_sing_btn').addEventListener('click', () => {
+   const valueEmail = document.getElementById('email').value;
+   const valuePassword = document.getElementById('password').value;
+   alert(`E-mail:${valueEmail}\nPassword:${valuePassword}`);
+
+});
+
+let popap = document.querySelector('.popap');
+let popapContent = document.querySelector('.popap_content');
+let hiddenPopap = document.querySelector('.popapclose');
+let openSingPopap = document.querySelector('.popapsing-open');
+let account = document.querySelector('.header_nav_items_mobile');
+
+document.querySelector('.popap_register').addEventListener('click', () => {
+   hiddenPopap.style.display = 'none';
+   openSingPopap.style.display = 'flex';
+});
+
+document.querySelector('.header-buttom').addEventListener('click', () =>{
+   popap.style.opacity = '100%';
+   popap.style.visibility = 'visible';
+   popapContent.style.transform = 'translate(0px,0px)'; 
+   
+});
+document.querySelector('.header_nav_items_mobile').addEventListener('click', () =>{
+   popap.style.opacity = '100%';
+   popap.style.visibility = 'visible';
+   popapContent.style.transform = 'translate(0px,0px)'; 
+   
+});
+
+document.querySelector('.popap_area').addEventListener('click', () =>{
+   popapContent.style.transform = 'translate(0px,-100%)';
+   popap.style.opacity = '0';
+   popap.style.visibility = 'hidden';
+   hiddenPopap.style.display = 'flex';
+   openSingPopap.style.display = 'none';
+
+});

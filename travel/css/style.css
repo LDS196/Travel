@@ -601,16 +601,24 @@ text-align: center;
 /*start css popap*/
 
 .popap {
-   position:;
+   position:fixed;
    height: 100%;
    width: 100%;
-   background: rgba(0, 0, 0, 0.8);
+   background: rgba(0, 0, 0, 0.7);
    top: 0 ;
    z-index: 150;
    left: 0;
-   opacity: ;
-   overflow: ;
-  
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+}
+.popap_area{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 151;
 }
 .popap_body {
    min-height: 100%;
@@ -620,6 +628,8 @@ text-align: center;
    padding: 0  10px;
 }
 .popap_content {
+   z-index: 152;
+   position: absolute;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -627,10 +637,13 @@ text-align: center;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    border-radius: 16px;
    max-width: 650px;
-   max-height: 660px;
-   padding: 25px 45px 0px 45px;
+   max-height: 1096px;
+   padding: 25px 45px 21px 45px;
+   transform: translate(0px,-100%);
+   transition: all 0.8s;
 }
 .popap_title{
+   display: block;
    margin-bottom: 30px;
 }
 .popap_title-text {
@@ -761,6 +774,7 @@ background: rgba(13, 96, 111, 0.5);
 
 }
 .popap_footer-text-fat{
+   background:none;
    font-family: 'Aleo';
    font-style: normal;
    font-weight: 700;
@@ -777,20 +791,28 @@ background: rgba(13, 96, 111, 0.5);
    background: rgba(13, 96, 111, 0.5);
 
 }
+.popapclose{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.popapsing-open{
+   display: none;
+   flex-direction: column;
+   align-items: center;
+
+}
 
 /*end css popap*/
 
 /*start css popapsing*/
 .popapsing{
-   position: ;
    height: 100%;
    width: 100%;
    background: rgba(0, 0, 0, 0.8);
    top: 0 ;
    z-index: 150;
    left: 0;
-   opacity: ;
-   overflow: ;
 }
 .popapsing_body {
    min-height: 100%;
@@ -813,8 +835,7 @@ background: rgba(13, 96, 111, 0.5);
 .popapsing_title {
    margin-bottom: 54px;
 }
-.popap_title-text {
-}
+
 .popapsing_email{
    margin-bottom: 45px ;
    position: relative;
@@ -838,7 +859,39 @@ margin-bottom: 26px;
    height: 1px;
    background: rgba(13, 96, 111, 0.5);
 }
+@media screen and (max-width:391px){
+   .popap_content {
+      max-width: 325px;
+      max-height: 1096px;
+      padding: 25px 45px 21px 45px;
 
+   }
+   .button {
+      font-size: 16px;
+      width:280px ;
+      height: 54px;
+
+   }
+   .popap_facebook_button {
+      background: #1877F2 url(../img/svg/Facebook-Logo.svg) no-repeat  35px 15px;
+}
+.popap_google_button {
+   background: white url(../img/svg/Google-Logo.svg) no-repeat  42px 15px;
+
+}
+.popap_title-text{
+   font-size: 20px;
+}
+.popap_line-wide{
+   width: 280px;
+}
+.line{
+   width: 130.5px;
+}
+.popapsing_line-wide-span{
+   width: 280px;
+}
+}
 
 
 /*end css popapsing*/
@@ -1429,6 +1482,7 @@ input::placeholder{
    padding-bottom: 15px;
 
 }
+
 
 }
 
