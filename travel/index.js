@@ -14,7 +14,7 @@
    })
 }());
 
-//slider desktop
+//Slider desktop
    let cerclePic =document.querySelectorAll('.destination-mover-cercle-pic') ;
    function addActiveLeft () {
       cerclePic[0].classList.add('destination-mover-cercle-active');
